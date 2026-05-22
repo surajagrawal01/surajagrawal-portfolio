@@ -5,7 +5,7 @@ import { FiMapPin, FiMail, FiPhone } from "react-icons/fi";
 
 const facts = [
   { label: "Years Experience", value: "3+" },
-  { label: "Sensors Monitored", value: "5000+" },
+  { label: "Sensors Monitored", value: "5k+" },
   { label: "Onboarding Cut", value: "40%" },
   { label: "UI Perf Gain", value: "60%" },
 ];
@@ -49,16 +49,18 @@ export default function About() {
             architecting robust Node.js backend systems.
           </p>
           <p className="text-text-soft leading-relaxed reveal reveal-delay-2">
-            Currently at{" "}
-            <span className="text-accent-light font-medium">
-              Nhance Digital BuildTech
-            </span>
-            , I build real-time IoT dashboards monitoring 5000+ live sensor
-            points, scalable onboarding workflows (40% faster rollouts), and
-            OpenAI + BMS integrations for enterprise infrastructure monitoring.
-            Measurable impact: 60% UI responsiveness gains, reliable
-            multi-stage deployments with WebSockets, and basic CI/CD using
-            GitHub Actions and Docker.
+            I drive scalable, enterprise-grade experiences through modern web
+            applications and backend systems. My recent work includes leading the
+            development of a <strong>
+              <a href="#projects" className="text-accent-light hover:underline">
+                ChunkStream Upload Engine
+              </a>
+            </strong> that accelerates large file uploads, improves reliability for
+            high-throughput data flows, and reduces deployment time with robust
+            WebSocket-driven orchestration. I also deliver real-time dashboards,
+            automated ingestion workflows, and CI/CD-powered release pipelines
+            that improve responsiveness and operational visibility for enterprise
+            teams.
           </p>
           <p className="text-text-soft leading-relaxed reveal reveal-delay-3">
             When I&apos;m not building production features, I maintain open-source
