@@ -20,6 +20,10 @@ import {
   SiRender,
   SiSupabase,
   SiNginx,
+  SiReactrouter,
+  SiJest,
+  SiTestinglibrary,
+  SiVite,
 } from "react-icons/si";
 import { FaAws } from "react-icons/fa6";
 import { FiDatabase, FiZap, FiGitBranch } from "react-icons/fi";
@@ -31,11 +35,14 @@ const skillCategories = [
     borderColor: "border-blue-500/30",
     skills: [
       { name: "React", icon: SiReact, color: "#61dafb" },
-      { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+      { name: "Next.js", icon: SiNextdotjs, color: "#353535" },
+      { name: "React Router", icon: SiReactrouter, color: "#00d8ff" },
       { name: "TypeScript", icon: SiTypescript, color: "#3178c6" },
       { name: "JavaScript", icon: SiJavascript, color: "#f7df1e" },
       { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38bdf8" },
-      { name: "Redux", icon: SiRedux, color: "#764abc" },
+      { name: "Zustand", icon: FiZap, color: "#22c55e" },
+      { name: "Vite", icon: SiVite, color: "#646cff" },
+      { name: "Redux Toolkit", icon: SiRedux, color: "#764abc" },
     ],
   },
   {
@@ -44,7 +51,7 @@ const skillCategories = [
     borderColor: "border-emerald-500/30",
     skills: [
       { name: "Node.js", icon: SiNodedotjs, color: "#68a063" },
-      { name: "Express.js", icon: SiExpress, color: "#ffffff" },
+      { name: "Express.js", icon: SiExpress, color: "#5a5a5a" },
       { name: "REST APIs", icon: FiDatabase, color: "#6366f1" },
       { name: "WebSockets", icon: FiZap, color: "#f59e0b" },
       { name: "GraphQL", icon: FiDatabase, color: "#e535ab" },
@@ -66,7 +73,7 @@ const skillCategories = [
     color: "from-sky-500/20 to-indigo-500/20",
     borderColor: "border-sky-500/30",
     skills: [
-      { name: "Vercel", icon: SiVercel, color: "#ffffff" },
+      { name: "Vercel", icon: SiVercel, color: "#515151" },
       { name: "Render", icon: SiRender, color: "#46e3b7" },
       { name: "Supabase", icon: SiSupabase, color: "#3ecf8e" },
       { name: "AWS EC2/S3", icon: FaAws, color: "#ff9900" },
@@ -79,10 +86,21 @@ const skillCategories = [
     color: "from-purple-500/20 to-pink-500/20",
     borderColor: "border-purple-500/30",
     skills: [
-      { name: "GitHub Actions", icon: SiGithub, color: "#ffffff" },
+      { name: "GitHub Actions", icon: SiGithub, color: "#7e7e7e" },
       { name: "CI/CD", icon: FiGitBranch, color: "#22c55e" },
       { name: "Git", icon: SiGit, color: "#f05032" },
       { name: "Postman", icon: SiPostman, color: "#ef5b25" },
+      { name: "Express.js", icon: SiExpress, color: "#000000" },
+    ],
+  },
+  {
+    title: "Testing & Mocking",
+    color: "from-fuchsia-500/20 to-pink-500/20",
+    borderColor: "border-fuchsia-500/30",
+    skills: [
+      { name: "Jest", icon: SiJest, color: "#99424f" },
+      { name: "React Testing Library", icon: SiTestinglibrary, color: "#f7c104" },
+      { name: "MSW", icon: FiZap, color: "#22c55e" },
     ],
   },
 ];
@@ -143,27 +161,6 @@ export default function Skills() {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Soft skills */}
-      <div className="mt-8 reveal reveal-delay-5">
-        <div className="glass rounded-xl p-6">
-          <h3 className="font-mono text-sm text-muted uppercase tracking-widest mb-4">
-            Soft Skills
-          </h3>
-          <div className="flex flex-wrap gap-3">
-            {["Communication", "Teamwork", "Adaptability", "Critical Thinking", "Time Management", "Ownership Mindset"].map(
-              (skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1.5 border border-accent/30 text-accent-light text-sm rounded-full font-mono hover:bg-accent-glow transition-colors"
-                >
-                  {skill}
-                </span>
-              )
-            )}
-          </div>
-        </div>
       </div>
     </section>
   );
