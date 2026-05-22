@@ -136,12 +136,13 @@ export default function Hero() {
         </div>
 
         <p className="text-muted text-sm sm:text-base md:text-lg max-w-xl sm:max-w-2xl mx-auto leading-relaxed mb-8 sm:mb-10">
-          Full Stack Developer building scalable apps with{" "}
+          Full Stack Developer building scalable applications with{" "}
           <span className="text-accent-light">React</span>,{" "}
           <span className="text-accent-light">Next.js</span>,{" "}
           <span className="text-accent-light">Node.js</span>, and{" "}
-          <span className="text-accent-light">TypeScript</span>. Real-time IoT
-          systems, 40% faster onboarding, CI/CD with GitHub Actions &amp; Docker.
+          <span className="text-accent-light">TypeScript</span>. I deliver performant
+          real-time experiences, streamlined onboarding workflows, and reliable
+          CI/CD pipelines with GitHub Actions &amp; Docker.
         </p>
 
         {/* Social links */}
